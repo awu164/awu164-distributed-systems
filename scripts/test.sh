@@ -150,7 +150,7 @@ fi
 # shellcheck disable=SC2294
 if [ -n "$PATTERN" ]; then
     MATCH_FLAGS=""
-    if [[ "$PATTERN" == s* ]]; then
+    if [[ "$PATTERN" =~ ^s[0-9]+$ ]]; then
         # npm test -- sN: only run scenarios for milestone N
         MILESTONE="${PATTERN/#s/m}" # sN -> mN
         MATCH_FLAGS+=" --testMatch \"**/*${MILESTONE}*.scenario.js\""
