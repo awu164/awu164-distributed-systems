@@ -31,6 +31,11 @@ const path = require('path');
 
 
 function query(indexFile, args) {
+  const searchTerms = execSync(`echo "${args}" | ./c/process.sh | ./c/stem.js`, {encoding: 'utf-8'});
+
+  const query = searchTerms.split('\n').map((term) => term.trim()).join(' ');
+
+  return execSync(`grep "${query}" "${indexFile}"`, {encoding: 'utf-8'});
 }
 
 const args = process.argv.slice(2); // Get command-line arguments
