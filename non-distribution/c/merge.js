@@ -34,7 +34,7 @@ Remember to error gracefully, particularly when reading the global index file.
 const fs = require('fs');
 const readline = require('readline');
 // The `compare` function can be used for sorting.
-const compare = (a, b) => {
+/* const compare = (a, b) => {
   if (a.freq > b.freq) {
     return -1;
   } else if (a.freq < b.freq) {
@@ -42,12 +42,12 @@ const compare = (a, b) => {
   } else {
     return 0;
   }
-};
+};*/
 const rl = readline.createInterface({
   input: process.stdin,
 });
 
-// 1. Read the incoming local index data from standard input (stdin) line by line.
+// 1. Read the incoming local index data from standard input (stdin) line by line. `<word/ngram> | <frequency> | <url>`
 let localIndex = '';
 rl.on('line', (line) => {
   localIndex += line + '\n';
@@ -57,7 +57,7 @@ rl.on('close', () => {
   // 2. Read the global index name/location, using process.argv
   // and call printMerged as a callback
   const globalIndexPath = process.argv[2];
-  fs.readFile(globalIndexPath, 'utf8', printMerged);
+  fs.readFile(globalIndexPath, 'utf-8', printMerged);
 });
 
 const printMerged = (err, data) => {
@@ -92,12 +92,14 @@ const printMerged = (err, data) => {
   // 4. For each line in `globalIndexLines`, parse them and add them to the `global` object
   // where keys are terms and values are url->freq maps (one entry per url).
   // Use the .trim() method to remove leading and trailing whitespace from a string.
+  //  `<word/ngram> | <url_1> <frequency_1> <url_2> <frequency_2> ... <url_n> <frequency_n>`
   for (const line of globalIndexLines) {
     const parts = line.split('|');
     const term = parts[0].trim();
+    const mappings = parts[1];
 
     if (parts[1]) {
-      const urlFreqs = parts[1].split(' ').map((part) => part.trim());
+      const urlFreqs = mappings.trim().split(' ').filter((part) => part !== '');
 
       if (!(term in global)) {
         global[term] = {};
@@ -154,10 +156,5 @@ const printMerged = (err, data) => {
     write += '\n';
   });
 
-  /* fs.writeFile(globalIndexPath, write, (err) => {
-    if (err) {
-      console.error('Error writing file:', err);
-    }
-  }); */
   console.log(write);
 };

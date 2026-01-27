@@ -25,9 +25,9 @@ For example, `execSync(`echo "${input}" | ./c/process.sh`, {encoding: 'utf-8'});
 */
 
 
-const fs = require('fs');
+/* const fs = require('fs'); */
 const {execSync} = require('child_process');
-const path = require('path');
+/* const path = require('path');*/
 
 
 function query(indexFile, args) {
@@ -35,7 +35,7 @@ function query(indexFile, args) {
 
   const query = searchTerms.split('\n').map((term) => term.trim()).join(' ');
 
-  return execSync(`grep "${query}" "${indexFile}"`, {encoding: 'utf-8'});
+  return execSync(`grep "${query}" "${indexFile}"`, {encoding: 'utf-8'}).trim();
 }
 
 const args = process.argv.slice(2); // Get command-line arguments
@@ -45,4 +45,4 @@ if (args.length < 1) {
 }
 
 const indexFile = 'd/global-index.txt'; // Path to the global index file
-query(indexFile, args);
+console.log(query(indexFile, args));

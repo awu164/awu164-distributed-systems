@@ -14,9 +14,8 @@
 # Tip: Make sure your program doesn't emit a non-zero exit code if there are no words left after removing stopwords.
 # You can combine the grep invocation with `|| true` to achieve this. Be careful though, as this will also hide other errors!
 
-INPUT=$1
 SCRIPT_DIR=$(dirname "$0")
 STOPWORD_D="$SCRIPT_DIR/../d/stopwords.txt"
-tr -cd '[:alpha:]' | tr '[:upper:]' '[:lower:]' | grep -v -w -f "$STOPWORD_D" | iconv -f utf-8 -t ASCII//TRANSLIT || true
+tr '[:upper:]' '[:lower:]' | tr -c '[:alpha:]' '\n'| grep -v -x -f "$STOPWORD_D"| iconv -f utf-8 -t ASCII//TRANSLIT || true
 
 
