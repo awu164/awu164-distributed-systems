@@ -1,0 +1,48 @@
+<html lang="en-us" dir="ltr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="
+  Sections
+  #
+
+In section, we split the class into smaller groups to review material,
+discuss, and complete exercises.  Sections generally occur on a weekly
+basis; for details, see the schedule.
+Here’s some of what past students said they liked about sections:
+
+
+&quot;I really liked the sections - I found them really useful and tended to learn a lot within them.&quot;
+&quot;I know [sections] were new this year, so I really think you should keep them as a part of the course because they were very helpful for having a smaller setting to ask questions and solidify my understanding of concepts.&quot;
+&quot;I found section super super helpful as it was a chance to talk to both TAs and other students in the class and ask more specific questions.&quot;
+&quot;[Sections] were extremely helpful for understanding concepts that I didn't understand initially in lecture due to the smaller groups in section. I had more opportunities to raise my hand and discuss with others.&quot;
+
+
+"><meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40"><meta name="color-scheme" content="light dark"><meta property="og:url" content="https://csci0300.github.io/sections/"><meta property="og:site_name" content="CS 300:  Fundamentals of Computer Systems">
+basis; for details, see the 
+Please use our <b><a href="https://script.google.com/a/macros/brown.edu/s/AKfycbyZ1OuU5agcTYhROltWY2_-bPkYaucU0rQHeycOsKuYOeHFfZLmZ8ieeWgweJFk4V05/exec" target="_blank">section switch tool</a></b>, to request a change
+(note: page may take a few seconds to load). Your request will be
+approved so long as we have available seats in the section room.<br><br>If you have issues switching sections, please reach out to the
+instructor via email.</p><h5 id="remote-students-and-csci-1310-students">Remote Students and CSCI 1310 Students
+</h5><p><a name="remote"></a></p><p><strong>If you are in the online version</strong> of CS 300/1310 (S02), your section
+signup will depend on your situation:</p><ul><li><em>If you are on-campus this semester</em>, you will need to sign up for
+an in-person section via CAB. Just enroll in a section that works for
+you.</li><li><em>If you are <strong>not</strong> on campus this semester</em> e.g., cybersecurity
+masters, study abroad), we will release specific information about
+remote-accessible sections shortly before the first section.</li></ul><p><strong>If you are in the graduate course, CS 1310</strong>, you will need to sign
+up for section using a different process. Please register for CS 1310
+in S01 on CAB; then, after 24 hours, please <a href="https://script.google.com/a/macros/brown.edu/s/AKfycbyZ1OuU5agcTYhROltWY2_-bPkYaucU0rQHeycOsKuYOeHFfZLmZ8ieeWgweJFk4V05/exec" target="_blank"><b>sign up for a section here</b></a> (note: page may take
+a few seconds to load).</p><p>If you encounter issues signing up for section, please contact the
+instructor at <code>cs300-instructors@brown.edu</code>.</p><h5 id="section-rules">Section Rules
+</h5><p>Here’s how sections in CS 300 work:</p><ul><li>Every student will attend eight mandatory sections over the course
+of the semester (roughly weekly, with some breaks and exceptions for
+quiz review weeks). The sections will be lead by the professor or a
+team of TAs and are designed to provide a space for you to review and
+reinforce lecture material, and for you to ask questions about the
+material.</li><li>A section will consist of 20-25 students who will stay within the
+same section grouping all semester.</li><li>At the start of the semester, you will sign up for a section
+on CAB when you enroll in the course (or as part of Lab 0).</li><li>When your section takes place, your attendance is <b>required</b>.
+We expect you to attend, be prepared, ask questions and contribute
+to the discussion. The section instructors will take attendance during
+the section.</li><li>Each section is centered around one or two concepts or
+demonstration programs. We want you to participate actively
+in the section, and section instructors may call on you to share your
+questions and ideas.</li></ul><p>Sections are <em>not</em> gear-ups or TA hours. They serve to review
+material, have it explained again in different words, and to address
+your conceptual questions.</p>

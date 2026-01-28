@@ -16,6 +16,6 @@
 
 SCRIPT_DIR=$(dirname "$0")
 STOPWORD_D="$SCRIPT_DIR/../d/stopwords.txt"
-tr '[:upper:]' '[:lower:]' | tr -c '[:alpha:]' '\n'| grep -v -x -f "$STOPWORD_D"| iconv -f utf-8 -t ASCII//TRANSLIT || true
+tr -sc "[:alpha:]" '\n'| tr '[:upper:]' '[:lower:]' | iconv -c -f UTF-8 -t ASCII//TRANSLIT 2>/dev/null | grep -x -v -f "$STOPWORD_D" || true
 
 
